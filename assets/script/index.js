@@ -1,5 +1,4 @@
 const display = document.querySelector('#display')
-// const hairstyles = document.querySelector('#photo-holder')
 const bigSmall = document.querySelector('#big-small-weaving')
 const ghana = document.querySelector('#ghana-weaving')
 const glona = document.querySelector('#stylist')
