@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --main-color:rgb(28, 28, 28);
+  --border-color: rgb(92, 92, 92);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+}
+body .body-content {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5em;
+  gap: 1em;
+}
+body .body-content .title-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+body .body-content .title-slider .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.8em 0;
+}
+body .body-content .title-slider .title h1 {
+  color: white;
+  text-transform: uppercase;
+}
+body .body-content .title-slider .slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+body .body-content .title-slider .slider .photo-holder {
+  background-color: var(--border-color);
+  width: 11em;
+  height: 9em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--border-color);
+  padding: 0 0 0.3em;
+}
+body .body-content .title-slider .slider .photo-holder .photos {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: inherit;
+}
+body .body-content .title-slider .slider .photo-holder .photos img {
+  width: inherit;
+  height: 100%;
+}
+body .body-content .title-slider .slider .photo-holder .hairstyle-name {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 0.65vw, 1.3rem);
+}
+body .body-content #display {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--border-color);
+  height: 30em;
+  width: 100%;
+  max-width: 50em;
+  margin: 0 0 2em;
+}
+body .body-content #display h1 {
+  color: #c7c7c7;
+}
+body .body-content #display #btn {
+  padding: 1em;
+}/*# sourceMappingURL=index.css.map */
