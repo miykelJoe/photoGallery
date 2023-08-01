@@ -82,10 +82,13 @@ body{
                             font-size: clamp(0.8rem, .65vw, 1.3rem);
                         }
                     }
+
+                    .photo-holder:hover{
+                        border: 3px solid rgb(23, 152, 195);
+                    }
                 }
             }
         #display{
-            // background-image: url(../images/BIG-SMALL.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;

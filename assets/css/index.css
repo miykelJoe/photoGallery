@@ -81,6 +81,9 @@ body .body-content .title-slider .slider .photo-holder .hairstyle-name {
   text-transform: uppercase;
   font-size: clamp(0.8rem, 0.65vw, 1.3rem);
 }
+body .body-content .title-slider .slider .photo-holder:hover {
+  border: 3px solid rgb(23, 152, 195);
+}
 body .body-content #display {
   background-position: center;
   background-repeat: no-repeat;

@@ -5,11 +5,11 @@ const glona = document.querySelector('#glona')
 const knotless = document.querySelector('#knotless')
 const stitch = document.querySelector('#stitch-braid')
 
-let GhanaWeaving = 'url(assets/images/GHANA.jpg)'
-let Weaving = 'url(assets/images/BIG-SMALL.jpg)'
-let stylist = 'url(assets/images/NATURAL.jpg)'
-let knotlessBraid = 'url(assets/images/NUTLESS.jpg)'
-let stitchBraid = 'url(assets/images/CENTIPEDE.jpg)'
+let GhanaWeaving = 'url(assets/images/ghana-weaving.jpg)'
+let Weaving = 'url(assets/images/weaving.jpg)'
+let stylist = 'url(assets/images/glona.jpg)'
+let knotlessBraid = 'url(assets/images/knotless-braid.jpg)'
+let stitchBraid = 'url(assets/images/stitch-braid.jpg)'
 
 
 weaving.onmouseover = function(){
