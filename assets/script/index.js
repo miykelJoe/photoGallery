@@ -1,23 +1,23 @@
 const display = document.querySelector('#display')
-const bigSmall = document.querySelector('#big-small-weaving')
-const ghana = document.querySelector('#ghana-weaving')
-const glona = document.querySelector('#stylist')
-const knotless = document.querySelector('#nutless')
-const cent = document.querySelector('#centipede')
+const weaving = document.querySelector('#weaving')
+const ghanaWeaving = document.querySelector('#ghana-weaving')
+const glona = document.querySelector('#glona')
+const knotless = document.querySelector('#knotless')
+const stitch = document.querySelector('#stitch-braid')
 
-let ghanaWeaving = 'url(assets/images/GHANA.jpg)'
-let bigSmallWeaving = 'url(assets/images/BIG-SMALL.jpg)'
+let GhanaWeaving = 'url(assets/images/GHANA.jpg)'
+let Weaving = 'url(assets/images/BIG-SMALL.jpg)'
 let stylist = 'url(assets/images/NATURAL.jpg)'
-let nutless = 'url(assets/images/NUTLESS.jpg)'
-let centipede = 'url(assets/images/CENTIPEDE.jpg)'
+let knotlessBraid = 'url(assets/images/NUTLESS.jpg)'
+let stitchBraid = 'url(assets/images/CENTIPEDE.jpg)'
 
 
-bigSmall.onmouseover = function(){
-    display.style.backgroundImage = bigSmallWeaving
+weaving.onmouseover = function(){
+    display.style.backgroundImage = Weaving
 }
 
-ghana.onmouseover = function(){
-    display.style.backgroundImage = ghanaWeaving
+ghanaWeaving.onmouseover = function(){
+    display.style.backgroundImage = GhanaWeaving
 }
 
 glona.onmouseover = function(){
@@ -25,9 +25,9 @@ glona.onmouseover = function(){
 }
 
 knotless.onmouseover = function(){
-    display.style.backgroundImage = nutless
+    display.style.backgroundImage = knotlessBraid
 }
 
-cent.onmouseover = function(){
-    display.style.backgroundImage = centipede
+stitch.onmouseover = function(){
+    display.style.backgroundImage = stitchBraid
 }
