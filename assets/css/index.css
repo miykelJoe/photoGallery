@@ -36,6 +36,7 @@ body .body-content .title-slider {
   gap: 2em;
 }
 body .body-content .title-slider .title {
+  max-width: 50em;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -51,6 +52,8 @@ body .body-content .title-slider .slider {
   justify-content: center;
   align-items: center;
   gap: 0.5em;
+  width: 100%;
+  max-width: 50em;
 }
 body .body-content .title-slider .slider .photo-holder {
   background-color: var(--border-color);

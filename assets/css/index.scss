@@ -31,7 +31,9 @@ body{
             display: flex;
             flex-direction: column;
             gap: 2em;
+
                 .title {
+                    max-width: 50em;
                     width: 100%;
                     display: flex;
                     justify-content: center;
@@ -42,13 +44,16 @@ body{
                         text-transform: uppercase;
                     }
                 }
-        
+                
                 .slider {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
                     align-items: center;
                     gap: .5em;
+                    width: 100%;
+                    max-width: 50em;
+
         
                     .photo-holder {
                         background-color: var(--border-color);

@@ -10,42 +10,31 @@ for (let i = 0; i < image.length; i++) {
     image[i].onmouseover = function () {
         if (i < image.length) {
             display.style.backgroundImage = url
+            display.style.transform = 'scale(1.1)'
+            display.style.width = '94%'
             transition
         }
     }
+    image[i].onmouseout = () => {
+        display.style.transform = 'scale(1)'
+    }
 }
-
 display.onmouseover = () => {
-        display.style.transform = 'scale(1.1)'
         transition
+        display.style.transform = 'scale(1.1)'
 }
 display.onmouseout = () => {
     transition
     display.style.transform = 'scale(1)'
 }
+
 display.onclick = () => {
     display.style.backgroundImage = 'none'
-    display.style.transform = 'scale(1)'
 }
 
-
-
-// weaving.onmouseover = function(){
-//     display.style.backgroundImage = Weaving
-// }
-
-// ghanaWeaving.onmouseover = function(){
-//     display.style.backgroundImage = GhanaWeaving
-// }
-
-// glona.onmouseover = function(){
-//     display.style.backgroundImage = stylist
-// }
-
-// knotless.onmouseover = function(){
-//     display.style.backgroundImage = knotlessBraid
-// }
-
-// stitch.onmouseover = function(){
-//     display.style.backgroundImage = stitchBraid
+// if (display.style.backgroundImage == ''){
+    // display.onmouseover = () => {
+        // console.log(2)
+    // display.style.backgroundColor = 'red'
+    // }
 // }
