@@ -1,33 +1,51 @@
 const display = document.querySelector('#display')
-const weaving = document.querySelector('#weaving')
-const ghanaWeaving = document.querySelector('#ghana-weaving')
-const glona = document.querySelector('#glona')
-const knotless = document.querySelector('#knotless')
-const stitch = document.querySelector('#stitch-braid')
+const image = document.querySelectorAll('.hairImg');
 
-let GhanaWeaving = 'url(assets/images/ghana-weaving.jpg)'
-let Weaving = 'url(assets/images/weaving.jpg)'
-let stylist = 'url(assets/images/glona.jpg)'
-let knotlessBraid = 'url(assets/images/knotless-braid.jpg)'
-let stitchBraid = 'url(assets/images/stitch-braid.jpg)'
+let transition = display.style.transition = '.6s'
 
+for (let i = 0; i < image.length; i++) {
+    let img = image[i].id;
+    let url = `url(assets/images/${img}.jpg)`
 
-weaving.onmouseover = function(){
-    display.style.backgroundImage = Weaving
+    image[i].onmouseover = function () {
+        if (i < image.length) {
+            display.style.backgroundImage = url
+            transition
+        }
+    }
 }
 
-ghanaWeaving.onmouseover = function(){
-    display.style.backgroundImage = GhanaWeaving
+display.onmouseover = () => {
+        display.style.transform = 'scale(1.1)'
+        transition
+}
+display.onmouseout = () => {
+    transition
+    display.style.transform = 'scale(1)'
+}
+display.onclick = () => {
+    display.style.backgroundImage = 'none'
+    display.style.transform = 'scale(1)'
 }
 
-glona.onmouseover = function(){
-    display.style.backgroundImage = stylist
-}
 
-knotless.onmouseover = function(){
-    display.style.backgroundImage = knotlessBraid
-}
 
-stitch.onmouseover = function(){
-    display.style.backgroundImage = stitchBraid
-}
+// weaving.onmouseover = function(){
+//     display.style.backgroundImage = Weaving
+// }
+
+// ghanaWeaving.onmouseover = function(){
+//     display.style.backgroundImage = GhanaWeaving
+// }
+
+// glona.onmouseover = function(){
+//     display.style.backgroundImage = stylist
+// }
+
+// knotless.onmouseover = function(){
+//     display.style.backgroundImage = knotlessBraid
+// }
+
+// stitch.onmouseover = function(){
+//     display.style.backgroundImage = stitchBraid
+// }
